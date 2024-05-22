@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isPal(string s, int start, int end)
+    bool isPal(string& s, int start, int end)
     {
         if(start>end) return false;
         while(start<=end)
@@ -9,7 +9,7 @@ public:
         }
         return true;
     }
-    void solve(string s, vector<vector<string>>&ans, vector<string>path,int index)
+    void solve(string s, vector<vector<string>>&ans, vector<string>&path,int index)
     {
         if(index==s.length())
         {
